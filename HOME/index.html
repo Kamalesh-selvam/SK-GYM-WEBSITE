@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK FITNESS CLUB</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@300;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Hero Section */
+        #home {
+            background-color: #2d3e50;
+            color: white;
+            padding: 100px 0;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .hero-image {
+            width: 80%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /* About Us Section */
+        .about {
+            background-color: #f1f1f1;
+        }
+        .about h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .about-image {
+            width: 80%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /* Contact Us Section */
+        .contact {
+            background-color: #2d3e50;
+            color: white;
+        }
+        .contact h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .contact p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #fff;
+        }
+        .features h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+            font-size: 16px;
+        }
+        .features ul li {
+            margin: 10px 0;
+        }
+
+        /* Membership Plans Section */
+        .membership {
+            background-color: #f1f1f1;
+        }
+        .membership h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .plans-container {
+            display: flex;
+            justify-content: center;
+        }
+        .plan {
+            width: 200px;
+            margin: 0 15px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .plan h3 {
+            font-size: 22px;
+        }
+        .plan button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .plan button:hover {
+            background-color: #e64a19;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 50px 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+        .swiper-wrapper {
+            display: flex;
+            animation: flowLeft 15s infinite linear;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @keyframes flowLeft {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            color: white;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">SK FITNESS CLUB</div>
+            <ul class="nav-links">
+                <li><a href="#signup">Sign Up</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>SK FITNESS CLUB</h1>
+        <p>Your Path to a Healthier Life</p>
+        <!-- Added Image Below Hero Text -->
+        <img src="image1.jpg" alt="Fitness Club" class="hero-image">
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Welcome to SK FITNESS CLUB, where fitness meets community! Our mission is to help you achieve your fitness goals with top-notch facilities and personalized training.</p>
+        <!-- Added Image Below About Us Text -->
+        <img src="image4.webp" alt="About Us" class="about-image">
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us!</p>
+        <p>Email: info@skfitnessclub.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: SK FITNESS CLUB, Neyveli Cost, Town Club Road, near Villudyanpattu Temple, Vadalur: 607303</p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Features</h2>
+        <ul>
+            <li>State-of-the-art Equipment</li>
+            <li>Personal Training Sessions</li>
+            <li>Group Fitness Classes</li>
+            <li>Nutrition Counseling</li>
+        </ul>
+    </section>
+
+    <!-- Membership Plans Section -->
+    <section id="membership" class="membership">
+        <h2>Membership Plans</h2>
+        <div class="plans-container">
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>Access to gym facilities and group classes</p>
+                <p>₹1,000/month</p>
+                <button>Sign Up</button>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p>Includes personal training sessions and nutrition counseling</p>
+                <p>₹2,500/month</p>
+                <button>Sign Up</button>
+            </div>
+            <div class="plan">
+                <h3>Annual Plan</h3>
+                <p>Full access to all facilities and services</p>
+                <p>₹25,000/year</p>
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-container">
+            <blockquote>"SK FITNESS CLUB has transformed my life! The trainers are incredibly supportive and the facilities are top-notch." - Happy Member</blockquote>
+            <blockquote>"I love the group classes! They are fun, engaging, and have helped me stay consistent with my workouts." - Satisfied Member</blockquote>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="image1.jpg" alt="Gym Image 1"></div>
+                <div class="swiper-slide"><img src="image2.jpg" alt="Gym Image 2"></div>
+                <div class="swiper-slide"><img src="image3.jpg" alt="Gym Image 3"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 SK FITNESS CLUB. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    
+</body>
+</html>
+
+

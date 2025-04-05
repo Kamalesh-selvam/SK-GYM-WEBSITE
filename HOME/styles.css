@@ -1,0 +1,274 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+#home {
+    background-color: #2d3e50;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 70%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* About Us Section */
+.about {
+    background-color: #f1f1f1;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Contact Us Section */
+.contact {
+    background-color: #2d3e50;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Features Section */
+.features {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.features ul li {
+    background: #ff5722;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.features ul li:hover {
+    transform: scale(1.05);
+}
+
+/* Membership Plans Section */
+.membership {
+    background-color: #f1f1f1;
+}
+
+.membership h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    width: 250px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan h3 {
+    font-size: 22px;
+}
+
+.plan button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.plan button:hover {
+    background-color: #e64a19;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    animation: flowLeft 15s infinite linear;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: white;
+    font-size: 24px;
+    bottom: 10px;  /* Adjusted to move below hero text */
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #fff;
+    padding: 50px 20px;
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-container blockquote {
+    background: #f8f8f8;
+    border-left: 5px solid #ff5722;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+    transition: transform 0.3s;
+}
+
+.testimonial-container blockquote:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+@keyframes flowLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
